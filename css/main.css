@@ -122,8 +122,21 @@ body {
     text-decoration: underline;
 }
 
+@media screen and (min-width: 667px) {
+    .card {
+        border-radius: 0.5rem 0 0 0.5rem;
+    }
 
-@media screen and (min-width: 48em) {
+    .card--blue {
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
+
+    .card--green {
+        border-radius: 0 0 0.5rem 0.5rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
     .card {
         min-height: 500px;
         padding: 3rem 2.6rem 3rem 3rem;
