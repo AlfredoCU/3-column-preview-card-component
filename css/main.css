@@ -52,7 +52,7 @@ body {
     height: 40px;
 }
 
-.card h2 {
+.card h1 {
     font-weight: 700;
     font-size: 2.5rem;
     margin: 2.5rem 0 2rem;
@@ -68,6 +68,7 @@ body {
 }
 
 .card a {
+    min-width: 148px;
     transition:  0.3s;
     width: fit-content;
     text-align: center;
