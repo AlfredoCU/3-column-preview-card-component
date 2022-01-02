@@ -16,10 +16,12 @@
 body {
     width: 100vw;
     display: flex;
+    padding: 5rem 5%;
     min-height: 100vh;
     position: relative;
     align-items: center;
     font-size: 0.938rem;
+    box-sizing: border-box;
     flex-direction: column;
     justify-content: center;
     color:var(--very-light-gray);
@@ -36,12 +38,12 @@ body {
     width: 100%;
     display: flex;
     max-width: 300px;
-    min-height: 500px;
+    min-height: auto;
+    padding: 3rem 2.2rem;
     flex-direction: column;
     box-sizing: border-box;
     justify-content: space-between;
-    padding: 3rem 2.6rem 3rem 3rem;
-    border-radius: 0.5rem 0 0 0.5rem;
+    border-radius: 0.5rem 0.5rem 0 0;
     background-color: var(--bright-orange);
 }
 
@@ -60,8 +62,8 @@ body {
 }
 
 .card p {
-    margin: 0;
     line-height: 24px;
+    margin: 0 0 1.5rem 0;
     color: var(--transparent-white);
 }
 
@@ -94,7 +96,7 @@ body {
 }
 
 .card--green {
-    border-radius: 0 0.5rem 0.5rem 0;
+    border-radius: 0 0 0.5rem 0.5rem;
     background-color: var(--very-dark-cyan);
 }
 
@@ -118,4 +120,25 @@ body {
 
 .attribution a:hover { 
     text-decoration: underline;
+}
+
+
+@media screen and (min-width: 48em) {
+    .card {
+        min-height: 500px;
+        padding: 3rem 2.6rem 3rem 3rem;
+        border-radius: 0.5rem 0 0 0.5rem;
+    }
+
+    .card p {
+        margin: 0;
+    }
+
+    .card--blue {
+        border-radius: 0;
+    }
+
+    .card--green {
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
 }
