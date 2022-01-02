@@ -24,8 +24,8 @@ body {
     box-sizing: border-box;
     flex-direction: column;
     justify-content: center;
-    color:var(--very-light-gray);
     font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--very-light-gray);
 }
 
 .container {
